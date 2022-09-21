@@ -43,15 +43,4 @@ $morse_dict = {
     return $morse_dict.key(morse_code).upcase
   end
 
-#   decode_word returns words
-  def decode_word(morse_code)
-    morse_code
-      .split('   ')
-      .select do |char|
-        char != ''
-      end
-      .map do |word|
-        word.split(' ').map { |char| $morse_dict.key(char).upcase }.join
-      end
-      .join(' ')
-  end
+  
