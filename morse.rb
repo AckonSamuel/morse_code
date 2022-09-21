@@ -63,7 +63,7 @@ end
 
 # prints result of morse code
 def print_morse(morse_code)
-  puts decode_sen(morse_code)
+  p decode_sen(morse_code)
 end
 
 # prints 'A BOX FULL OF RUBIES'
