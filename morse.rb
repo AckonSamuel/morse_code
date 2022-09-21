@@ -40,7 +40,7 @@ $morse_dict = {
 
 #   decode_letter returns only one letter
   def decode_letter(morse_code)
-    return morse_dict.key(morse_code)
+    return $morse_dict.key(morse_code).upcase
   end
 
 #   decode_word returns words
@@ -51,7 +51,7 @@ $morse_dict = {
         char != ''
       end
       .map do |word|
-        word.split(' ').map { |char| morse_dict.key(char).upcase }.join
+        word.split(' ').map { |char| $morse_dict.key(char).upcase }.join
       end
       .join(' ')
   end
