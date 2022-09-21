@@ -48,7 +48,6 @@ $morse_dict = {
     morse_code.split(' ').map { |char| decode_letter(char) }.join 
   end 
 
-  
 #   decode_sen returns words
 def decode_sen(morse_code)
   morse_code
@@ -61,3 +60,6 @@ def decode_sen(morse_code)
     end
     .join(' ')
 end
+
+# returns "A BOX FULL OF RUBIES"
+decode_sen("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
