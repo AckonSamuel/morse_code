@@ -55,10 +55,13 @@ def decode_sen(morse_code)
     .reject do |char|
     char == ''
   end
-  mor_arr.map do |word|
+  convert = mor_arr.map do |word|
     decode_word(word)
   end
     .join(' ')
+
+  # print the result
+  puts convert
 end
 
 # returns 'A BOX FULL OF RUBIES'
