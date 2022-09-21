@@ -61,5 +61,10 @@ def decode_sen(morse_code)
     .join(' ')
 end
 
-# returns 'A BOX FULL OF RUBIES'
-decode_sen('      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# prints result of morse code
+def print_morse(morse_code)
+  puts decode_sen(morse_code)
+end
+
+# prints 'A BOX FULL OF RUBIES'
+print_morse('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
