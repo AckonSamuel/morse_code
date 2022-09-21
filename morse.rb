@@ -49,3 +49,15 @@ $morse_dict = {
   end 
 
   
+#   decode_sen returns words
+def decode_sen(morse_code)
+  morse_code
+    .split('   ')
+    .select do |char|
+      char != ''
+    end
+    .map do |word|
+      decode_word(word)
+    end
+    .join(' ')
+end
